@@ -1,0 +1,8 @@
+click
+pandas
+numpy
+scipy
+networkx
+black
+flake8
+mypy
