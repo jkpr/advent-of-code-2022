@@ -20,7 +20,7 @@ def calculate_score(elf: str, me: str) -> int:
         return 3 + SCORE_MAP[GESTURE_MAP[me]]
     elif diff == 1:
         return 6 + SCORE_MAP[GESTURE_MAP[me]]
-    elif diff == 2:
+    else:  # diff == 2:
         return 0 + SCORE_MAP[GESTURE_MAP[me]]
 
 
@@ -36,7 +36,7 @@ def calculate_score2(elf: str, outcome: str) -> int:
         return 0 + SCORE_MAP[(GESTURE_MAP[elf] + 2) % 3]
     elif outcome == "Y":
         return 3 + SCORE_MAP[GESTURE_MAP[elf]]
-    elif outcome == "Z":
+    else:  # outcome == "Z":
         return 6 + SCORE_MAP[(GESTURE_MAP[elf] + 1) % 3]
 
 

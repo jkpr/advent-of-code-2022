@@ -17,7 +17,8 @@ def part1(lines: list[str]):
 def part2(lines: list[str]):
     total = 0
     for i in range(len(lines) // 3):
-        a, b, c = lines[i * 3 : (i * 3 + 3)]
+        this_slice = slice(i * 3, i * 3 + 3)
+        a, b, c = lines[this_slice]
         inter = list(set(a) & set(b) & set(c))[0]
         if inter:
             letter = list(inter)[0]
