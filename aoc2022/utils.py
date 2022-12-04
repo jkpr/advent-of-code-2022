@@ -2,7 +2,7 @@ import logging
 
 
 def setup_logging():
-    parent = __name__[:__name__.rfind(".")]
+    parent = __name__[: __name__.rfind(".")]
     logger = logging.getLogger(parent)
     logger.setLevel(logging.DEBUG)
     formatter = logging.Formatter(
