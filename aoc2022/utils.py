@@ -1,3 +1,4 @@
+import json
 import logging
 
 
@@ -12,3 +13,7 @@ def setup_logging():
     stream_handler.setLevel(logging.NOTSET)
     stream_handler.setFormatter(formatter)
     logger.addHandler(stream_handler)
+
+
+def print_json(obj, **kwargs):
+    print(json.dumps(obj, sort_keys=True, indent=2, default=repr))

@@ -18,6 +18,7 @@ from math import (
     prod,
     sqrt,
 )
+from pprint import pprint
 from re import (
     search,
     match,
@@ -26,6 +27,8 @@ from re import (
     findall,
     sub,
 )
+
+from ..utils import print_json
 
 
 def part1(lines: list[str]):

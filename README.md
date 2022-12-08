@@ -41,3 +41,7 @@ The CLI is common for each day. The main patterns for options are:
 # Day 3
 
 # Day 4
+
+# Day 5
+
+# Day 6
